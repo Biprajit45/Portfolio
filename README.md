@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# MyPortfolio
 
-## Project info
+**Live Demo:** [https://portfolio-one-flame-55.vercel.app/](https://portfolio-one-flame-55.vercel.app/)
 
-**URL**: https://lovable.dev/projects/1a5a85e5-0e41-452e-bb18-19524abe9acd
+A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**.
 
-## How can I edit this code?
+Showcase your skills, projects, and experience with a clean and interactive design.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a5a85e5-0e41-452e-bb18-19524abe9acd) and start prompting.
+- Beautiful hero section with animated intro
+- About, Skills, Projects, and Contact sections
+- Animated skill stats and interactive UI
+- Responsive design for all devices
+- Easy to customize and extend
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Biprajit12/Portfolio.git
+   cd MyPortfolio
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+4. **Build for production:**
+   ```sh
+   npm run build
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🌐 Deployment
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+You can deploy this portfolio easily on platforms like **Vercel**, **Netlify**, or **GitHub Pages**.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Vercel:** [vercel.com](https://vercel.com/)
+- **Netlify:** [netlify.com](https://www.netlify.com/)
+- **GitHub Pages:** [docs](https://vitejs.dev/guide/static-deploy.html#github-pages)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📫 Contact
 
-**Edit a file directly in GitHub**
+- **GitHub:** [Biprajit12](https://github.com/Biprajit12)
+- **LinkedIn:** [biprajitsuklabaidya](https://www.linkedin.com/in/biprajitsuklabaidya/)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1a5a85e5-0e41-452e-bb18-19524abe9acd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+> Made with ❤️ by Biprajit Suklabaidya
