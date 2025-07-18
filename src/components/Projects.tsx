@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: 'OmniBOTix',
       description: 'A full-stack e-commerce solutionfor all your AI needs.Browse through our wide range of AI tools and services.',
-      image: '/public/projects/omnibotix.png',
+      image: '/projects/omnibotix.png',
       tags: ['React', 'Typescript'],
       github: 'https://github.com/Biprajit12/OmniBOTix',
       live: 'https://omni-bo-tix-uhte.vercel.app/',
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: 'Portfolio Website',
       description: 'Personal portfolio built with React, Tailwind CSS, and Framer Motion to showcase my work and skills.',
-      image: '/public/projects/portfolio.png',
+      image: '/projects/portfolio.png',
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/Biprajit12/Portfolio',
       live: 'https://portfolio-one-flame-55.vercel.app/',
