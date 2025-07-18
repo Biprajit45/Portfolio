@@ -8,13 +8,14 @@ import './masonry.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with modern payment integration, inventory management, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: '#',
-      live: '#',
+      title: 'OmniBOTix',
+      description: 'A full-stack e-commerce solutionfor all your AI needs.Browse through our wide range of AI tools and services.',
+      image: '/public/projects/omnibotix.png',
+      tags: ['React', 'Typescript'],
+      github: 'https://github.com/Biprajit12/OmniBOTix',
+      live: 'https://omni-bo-tix-uhte.vercel.app/',
       featured: true,
+      inProgress: true,
     },
     {
       title: 'AI-Powered Analytics',
@@ -46,11 +47,12 @@ const Projects = () => {
     {
       title: 'Portfolio Website',
       description: 'Personal portfolio built with React, Tailwind CSS, and Framer Motion to showcase my work and skills.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop',
+      image: '/public/projects/portfolio.png',
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/Biprajit12/Portfolio',
+      live: 'https://portfolio-one-flame-55.vercel.app/',
       featured: false,
+      inProgress: true,
     },
     {
       title: 'Chatbot Assistant',
@@ -104,13 +106,12 @@ const Projects = () => {
                 className="group bg-glass border-glass backdrop-blur-glass overflow-hidden hover:shadow-elegant hover:border-gradient transition-all duration-500 will-change-transform cursor-pointer animate-fade-up"
                 style={{ animationDelay: `${index * 0.08}s`, width: '100%', maxWidth: 420 }}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden rounded-lg bg-black">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-48 object-contain p-2"
                   />
-                  <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center justify-between">
@@ -120,6 +121,12 @@ const Projects = () => {
                     {project.featured && (
                       <Badge className="bg-primary/20 text-primary border-primary/30">
                         Featured
+                      </Badge>
+                    )}
+                    {project.inProgress && (
+                      <Badge className="bg-green-100 text-green-700 border-green-300 flex items-center gap-1">
+                        <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-blink"></span>
+                        In Progress
                       </Badge>
                     )}
                   </div>
@@ -181,11 +188,19 @@ const Projects = () => {
                   <h3 className="text-2xl font-bold text-foreground">
                     {modalProject.title}
                   </h3>
-                  {modalProject.featured && (
-                    <Badge className="bg-primary/20 text-primary border-primary/30">
-                      Featured
-                    </Badge>
-                  )}
+                  <div className="flex gap-2">
+                    {modalProject.featured && (
+                      <Badge className="bg-primary/20 text-primary border-primary/30">
+                        Featured
+                      </Badge>
+                    )}
+                    {modalProject.inProgress && (
+                      <Badge className="bg-green-100 text-green-700 border-green-300 flex items-center gap-1">
+                        <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-blink"></span>
+                        In Progress
+                      </Badge>
+                    )}
+                  </div>
                 </div>
                 <p className="text-muted-foreground text-base">{modalProject.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -214,6 +229,15 @@ const Projects = () => {
           </div>
         )}
       </div>
+      <style>{`
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.2; }
+        }
+        .animate-blink {
+          animation: blink 1s infinite;
+        }
+      `}</style>
     </section>
   );
 };
