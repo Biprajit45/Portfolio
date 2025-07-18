@@ -1,7 +1,7 @@
 
 # MyPortfolio
 
-**Live Demo:** [https://portfolio-one-flame-55.vercel.app/](https://portfolio-one-flame-55.vercel.app/)
+**Live Demo:** [https://portfolio-one-flame-55.vercel.app/](https://portfolio-gnp8.vercel.app/)
 
 A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**.
 
